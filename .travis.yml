@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t sacheendertalwar/redis-image .
+
+script:
+  - docker run sacheendetalwar/redis-image
