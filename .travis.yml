@@ -6,8 +6,4 @@ before_install:
   - docker build -t sacheendertalwar/redis-image .
 
 script:
-<<<<<<< HEAD
   - docker run sacheendertalwar/redis-image
-=======
-  - docker run sacheendetalwar/redis-image
->>>>>>> f4dc397dda73e3c7e674adc07355dea702aeb8fd
