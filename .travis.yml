@@ -9,7 +9,4 @@ jobs:
       script: docker build -t sacheendertalwar/redis-image .
 
     - stage: "Run test Docker"
-      script: docker run sacheendertalwar/redis-image
-
-    - stage: "Stopping test Docker"
-      script: docker stop $(docker ps -q)
+      script: docker run hello-world
