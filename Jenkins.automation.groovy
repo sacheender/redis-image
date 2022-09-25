@@ -3,18 +3,6 @@ pipeline {
 
 
     stages {
-        stage('Build') {
-            steps {
-                // Get some code from a GitHub repository
-                git 'https://github.com/sacheender/redis-image.git'
-
-             
-               // sh "mvn -Dmaven.test.failure.ignore=true clean package"
-
-                // To run Maven on a Windows agent, use
-                // bat "mvn -Dmaven.test.failure.ignore=true clean package"
-            }
-        }
         stage("Print Details"){
             steps {
                    echo "${env.BUILD_url}"
