@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage("Print Details"){
             steps {
-                   echo "${env.BUILD_url}"
+                   echo "${env.BUILD_URL}"
                     echo "${env.JENKINS_HOME}"
                     // Run Maven on a Unix agent.
             }
