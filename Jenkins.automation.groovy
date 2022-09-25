@@ -21,6 +21,15 @@ pipeline {
 				   """
 				   sleep 30
             }
+			 steps {
+                   echo "2nd Workspace location is : "+"${env.WORKSPACE}"
+                   sh """
+				   python3 test1.py
+				   python3 test1.py
+				   python3 test1.py
+				   """
+				   sleep 30
+            }
 			
             
         }
