@@ -15,11 +15,11 @@ pipeline {
             steps {
                    echo "Workspace location is : "+"${env.WORKSPACE}"
                    sh 
-				   ```
+				   '''
 				   python3 test1.py
 				   python3 test1.py
 				   python3 test1.py
-				   ```
+				  '''
 				   
             }
             
