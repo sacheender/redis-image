@@ -14,12 +14,11 @@ pipeline {
          stage("Execute Pythong"){
             steps {
                    echo "Workspace location is : "+"${env.WORKSPACE}"
-                   sh 
-				   '''
+                   sh """
 				   python3 test1.py
 				   python3 test1.py
 				   python3 test1.py
-				  '''
+				   """
 				   
             }
             
