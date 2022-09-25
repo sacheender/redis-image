@@ -13,16 +13,15 @@ pipeline {
         }
          stage("Execute Pythong"){
             steps {
-                   echo "Workspace location is : "+"${env.WORKSPACE}"
+                  step{ echo "Workspace location is : "+"${env.WORKSPACE}"
                    sh """
 				   python3 test1.py
 				   python3 test1.py
 				   python3 test1.py
 				   """
 				   sleep 30
-            }
-			 steps {
-                   echo "2nd Workspace location is : "+"${env.WORKSPACE}"
+				 }
+				  step{ echo "2nd Workspace location is : "+"${env.WORKSPACE}"
                    sh """
 				   python3 test1.py
 				   python3 test1.py
@@ -34,4 +33,5 @@ pipeline {
             
         }
     }
+}
 }
