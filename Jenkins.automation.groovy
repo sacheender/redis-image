@@ -19,9 +19,9 @@ pipeline {
 				   python3 test1.py
 				   python3 test1.py
 				   """
-				   
+				   sleep 10
             }
-			sleep 10
+			
             
         }
     }
