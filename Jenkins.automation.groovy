@@ -21,6 +21,7 @@ pipeline {
 				   """
 				   
             }
+			sleep 10
             
         }
     }
